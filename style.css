@@ -98,3 +98,51 @@ table {
     height: 100%;
     width: 32vw;
 }
+.latest-news {
+    width: 100%;
+    height: 75vh;
+    max-height: 570px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: (2, auto);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    /* keep playing */
+    /* justify-content: space-evenly; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.latest-news .item {
+    background-color: rgb(200, 200, 200);
+    
+}
+.funding-rounds {
+    background-color: rgb(100, 100, 100);
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    height: 50vh;
+}
+.funding-rounds .round {
+    background-color: rgb(150, 150, 150);
+}
+.everything-else {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    min-height: 75vh;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+.everything-else * {
+    background-color: lightgrey;
+}
+
+.ads {
+    width: 100%;
+    height: 50vh;
+    background-color: lightskyblue;
+}
