@@ -51,6 +51,7 @@ table {
 
 /* End Reset */
 
+/* small screens */
 @media only screen and (max-width: 740px) {
     .jumbo {
         grid-template-columns: auto;
@@ -72,7 +73,7 @@ table {
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    .latest-news .item {
+    .latest-news .news-item {
         background-color: rgb(200, 200, 200);
         margin: 1px;
         
@@ -88,7 +89,20 @@ table {
     .funding-rounds .round {
         background-color: rgb(150, 150, 150);
     }
+    .everything-else {
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto;
+        min-height: 75vh;
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+    }
+    .everything-else * {
+        background-color: lightgrey;
+    }
 }
+/* universals */
+/* just kidding top bar changes too */
 
 .top-bar {
     background-color: black;
@@ -110,6 +124,7 @@ table {
     background-color: lightgreen;
 }
 
+/* big screens */
 @media only screen and (min-width: 740px) {
 .jumbo {
     width: 100%;
@@ -153,26 +168,10 @@ table {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.latest-news .item {
+.latest-news .news-item {
     background-color: rgb(200, 200, 200);
     
 }
-.funding-rounds {
-    background-color: rgb(100, 100, 100);
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto;
-    grid-row-gap: 30px;
-    grid-column-gap: 30px;
-    height: 50vh;
-}
-.funding-rounds .round {
-    background-color: rgb(150, 150, 150);
-}
-
-}
-
 .funding-rounds {
     background-color: rgb(100, 100, 100);
     width: 100%;
@@ -197,6 +196,9 @@ table {
 .everything-else * {
     background-color: lightgrey;
 }
+
+}
+
 
 .ads {
     width: 100%;
