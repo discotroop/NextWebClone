@@ -61,6 +61,33 @@ table {
         background-color: rgb(200, 200, 200);
         height: 100px;
         width: 100%;
+    }
+    .latest-news {
+        width: 100%;
+        height: 75vh;
+        max-height: 570px;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-column-gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .latest-news .item {
+        background-color: rgb(200, 200, 200);
+        margin: 1px;
+        
+    }
+    .funding-rounds {
+        background-color: rgb(100, 100, 100);
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-column-gap: 30px;
+        height: 50vh;
+    }
+    .funding-rounds .round {
+        background-color: rgb(150, 150, 150);
+    }
 }
 
 .top-bar {
@@ -84,7 +111,6 @@ table {
 }
 
 @media only screen and (min-width: 740px) {
-
 .jumbo {
     width: 100%;
     display: grid;
@@ -113,7 +139,6 @@ table {
     height: 100%;
     width: 32vw;
 }
-}
 .latest-news {
     width: 100%;
     height: 75vh;
@@ -132,6 +157,22 @@ table {
     background-color: rgb(200, 200, 200);
     
 }
+.funding-rounds {
+    background-color: rgb(100, 100, 100);
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    height: 50vh;
+}
+.funding-rounds .round {
+    background-color: rgb(150, 150, 150);
+}
+
+}
+
 .funding-rounds {
     background-color: rgb(100, 100, 100);
     width: 100%;
