@@ -65,6 +65,9 @@ a:hover {
         position: fixed;
         top: 0px;
         z-index: 1000;
+        height: 50px;
+        background-color: beige;
+        width: 100%;
     }
     .jumbo {
         grid-template-columns: auto;
@@ -124,6 +127,19 @@ a:hover {
         background-color: lightgrey;
         width: 95%;
     }
+}
+
+.first-jumbo {
+    background-image: url('./images/jumbo1.jpg');
+    background-size: 100% auto;
+}
+.second-jumbo {
+    background-image: url('./images/jumbo2.jpg');
+    background-size: 100% auto;
+}
+.third-jumbo {
+    background-image: url('./images/jumbo3.jpeg');
+    background-size: 100% auto;
 }
 /* universals */
 /* just kidding top bar changes too */
