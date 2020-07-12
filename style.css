@@ -59,6 +59,19 @@ a:hover {
     color: black;
 }
 
+.first-jumbo {
+    background-image: url('./images/jumbo1.jpg');
+    background-size: 100% auto;
+}
+.second-jumbo {
+    background-image: url('./images/jumbo2.jpg');
+    background-size: 100% auto;
+}
+.third-jumbo {
+    background-image: url('./images/jumbo3.jpeg');
+    background-size: 100% auto;
+}
+
 /* small screens */
 @media only screen and (max-width: 740px) {
     .top-bar {
@@ -75,14 +88,22 @@ a:hover {
         grid-row-gap: 30px;
         padding: 10px;
         margin-top: 50px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
     }
-    .jumbo * {
-        background-color: white;
+    .first-jumbo, .second-jumbo, .third-jumbo {
         height: 145px;
         width: 98%;
-        border-color: black;
-        border-width: 1px;
-        border-style: solid;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .jumbo h3 {
+        padding: 1px;
+        margin: 1px;
+    }
+    .jumbo p {
         margin: 5px;
     }
     .latest-news {
@@ -129,18 +150,6 @@ a:hover {
     }
 }
 
-.first-jumbo {
-    background-image: url('./images/jumbo1.jpg');
-    background-size: 100% auto;
-}
-.second-jumbo {
-    background-image: url('./images/jumbo2.jpg');
-    background-size: 100% auto;
-}
-.third-jumbo {
-    background-image: url('./images/jumbo3.jpeg');
-    background-size: 100% auto;
-}
 /* universals */
 /* just kidding top bar changes too */
 
