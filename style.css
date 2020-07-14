@@ -85,9 +85,17 @@ h1 {
 .main {
     background-color: rgb(250, 250, 250);
 }
+.content-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 10px;
+}
 
 /* small screens */
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 739px) {
+    /* nav bar for small screens */
     .top-bar {
         position: fixed;
         top: 0px;
@@ -132,7 +140,6 @@ h1 {
         width: 50px;
     }
     .top-bar-search {
-        /* background-image: url('./icons/searcg.png'); */
         display: border-box;
         width: 50px;
         height: 50px;
@@ -153,8 +160,10 @@ h1 {
         margin: 10px;
         max-width: 30px;
         max-height: 30px;
+        color:  rgb(255, 68, 34);
     }
 
+    /* Jumbo for small screen */
     .jumbo {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
@@ -183,31 +192,54 @@ h1 {
         font-size: 14px;
         color: lightgray;
     }
+
+    /* News for smalls screens */
     .latest-news {
         width: 100%;
         padding: 10px;
-        height: 75vh;
-        max-height: 570px;
+        min-height: 75vh;
         display: grid;
         grid-template-columns: repeat(1, auto);
         grid-column-gap: 30px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    .latest-news .news-item {
-        background-color: rgb(200, 200, 200);
+    .news-item {
         margin: 1px;
+        margin-top: 10px;
         width: 95%;
-        
+        display: flex;
+        flex-direction: row;   
+    }
+    .news-item-img {
+        overflow: hidden;
+        width: 75px;
+        height: 75px;
+        margin-right: 10px;
+    }
+    .news-item img {
+        max-width: 75px;
+    }
+    .news-item h3 {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 14px;
+    }
+    .news-item p {
+        font-family: 'Arial', 'Helvetica', 'sans-serif';
+        font-size: 12px;
+        color: rgb(100, 100, 100);
+        margin-top: 10px;
+
     }
     .funding-rounds {
+        margin-top: 1px;
         background-color: rgb(100, 100, 100);
         width: 100%;
         padding: 10px;
         display: grid;
         grid-template-columns: repeat(1, auto);
         grid-column-gap: 30px;
-        height: 50vh;
+        /* height: 50vh; */
     }
     .funding-rounds .round {
         background-color: rgb(150, 150, 150);
@@ -226,29 +258,6 @@ h1 {
         width: 95%;
     }
 }
-
-/* universals */
-/* just kidding top bar changes too */
-
-/* .top-bar {
-    background-color: black;
-    width: 100%;
-    height: 30px;
-    position: static;
-    top: 0;
-}
-.main {
-    margin-top: 30px;
-    width: 100%;
-}
-.nav {
-    /* come back to the black bar */
-    /* position: static;
-    top: 0;
-    width: 100%;
-    height: 50px;
-    background-color: lightgreen;
-} */
 
 /* big screens */
 @media only screen and (min-width: 740px) {
